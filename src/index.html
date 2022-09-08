@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="sideForm" class="panel">
+        <div id="header">
+            <div>
+                <img src="../data/Images/bookMark.svg" class="smIcon">
+                <h2>Bookmark</h2>
+            </div>
+
+            <h6>Remember your page by saving it here!</h6>
+        </div>
+
+        <form>
+            <div>
+                <label for="nameBook">Book</label>
+                <input type="text" id="nameBook">
+            </div>
+
+            <div>
+                <label for="nameAuthor">Author</label>
+                <input type="text" id="nameAuthor">
+            </div>
+
+            <div>
+                <label for="pages">Pages Read</label>
+                <input type="number" id="pages">
+            </div>
+
+            <div>
+                <label for="status">Status</label>
+                <select type="text" id="Status">
+                    <option value="Finished">Finished</option>
+                    <option value="Read">Reading</option>
+                    <option value="Not Started">Not Started</option>
+                </select>
+            </div>
+
+            <button class="darkHover" type="submit">Add Book</button>
+        </form>
+    </div>
+
+    <div id="mainContent" class="panel">
+        <div id="header">
+            <img src="../data/Images/citySeal.svg" class="medIcon">
+            <h2>Orlando Public Library</h2>
+        </div>
+
+        <div id="books">
+            <div class="book finished">
+                <h2 class="bookName">Harry Potter</h2>
+                <h4 class="authorName">J.K Rollings</h4>
+                <h5 class="pagesRead">256</h5>
+                <h6 class="bookStatus">Finished</h6>
+                <div class="editButtons">
+                    <button class="darkHover" type="submit">Edit</button>
+                    <button class="darkHover" type="submit">Delete</button>
+                </div>
+            </div>
+
+            <div class="book finished">
+                <h2 class="bookName">Harry Potter</h2>
+                <h4 class="authorName">J.K Rollings</h4>
+                <h5 class="pagesRead">256</h5>
+                <h6 class="bookStatus">Finished</h6>
+                <div class="editButtons">
+                    <button class="darkHover" type="submit">Edit</button>
+                    <button class="darkHover" type="submit">Delete</button>
+                </div>
+            </div>
+
+            <div class="book reading">
+                <h2 class="bookName">Harry Potter</h2>
+                <h4 class="authorName">J.K Rollings</h4>
+                <h5 class="pagesRead">2</h5>
+                <h6 class="bookStatus">Reading</h6>
+                <div class="editButtons">
+                    <button class="darkHover" type="submit">Edit</button>
+                    <button class="darkHover" type="submit">Delete</button>
+                </div>
+            </div>
+
+
+            <div class="book notStarted">
+                <h2 class="bookName">Harry Potter</h2>
+                <h4 class="authorName">J.K Rollings</h4>
+                <h5 class="pagesRead">0</h5>
+                <h6 class="bookStatus">Not Started</h6>
+                <div class="editButtons">
+                    <button class="darkHover" type="submit">Edit</button>
+                    <button class="darkHover" type="submit">Delete</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
