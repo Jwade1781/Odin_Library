@@ -128,6 +128,6 @@ body {
     width: auto;
 }
 
-.finished{background-color: green;}
-.reading{background-color: orange;}
-.notStarted{background-color: red;}
+.finished{background-color: #1982FC;}
+.reading{background-color: #723bf9;}
+.notstarted{background-color: rgb(127,23,14);}

@@ -23,30 +23,30 @@
 
         <form>
             <div>
-                <label for="nameBook">Book</label>
-                <input type="text" id="nameBook">
+                <label for="bookName">Book</label>
+                <input type="text" id="bookName" value="Harry Potter">
             </div>
 
             <div>
-                <label for="nameAuthor">Author</label>
-                <input type="text" id="nameAuthor">
+                <label for="authorName">Author</label>
+                <input type="text" id="authorName" value="J.K Rollings">
             </div>
 
             <div>
-                <label for="pages">Pages Read</label>
-                <input type="number" id="pages">
+                <label for="pagesRead">Pages Read</label>
+                <input type="number" id="pagesRead" value="256">
             </div>
 
             <div>
-                <label for="status">Status</label>
-                <select type="text" id="Status">
+                <label for="readStatus">Status</label>
+                <select type="text" id="readStatus" value="Finished">
                     <option value="Finished">Finished</option>
-                    <option value="Read">Reading</option>
+                    <option value="Reading">Reading</option>
                     <option value="Not Started">Not Started</option>
                 </select>
             </div>
 
-            <button class="darkHover" type="submit">Add Book</button>
+            <button class="darkHover" type="button" onclick="addBook()">Add Book</button>
         </form>
     </div>
 
@@ -63,8 +63,8 @@
                 <h5 class="pagesRead">256</h5>
                 <h6 class="bookStatus">Finished</h6>
                 <div class="editButtons">
-                    <button class="darkHover" type="submit">Edit</button>
-                    <button class="darkHover" type="submit">Delete</button>
+                    <button class="darkHover" type="button">Edit</button>
+                    <button class="darkHover" type="button">Delete</button>
                 </div>
             </div>
 
@@ -74,8 +74,8 @@
                 <h5 class="pagesRead">256</h5>
                 <h6 class="bookStatus">Finished</h6>
                 <div class="editButtons">
-                    <button class="darkHover" type="submit">Edit</button>
-                    <button class="darkHover" type="submit">Delete</button>
+                    <button class="darkHover" type="button">Edit</button>
+                    <button class="darkHover" type="button">Delete</button>
                 </div>
             </div>
 
@@ -85,20 +85,19 @@
                 <h5 class="pagesRead">2</h5>
                 <h6 class="bookStatus">Reading</h6>
                 <div class="editButtons">
-                    <button class="darkHover" type="submit">Edit</button>
-                    <button class="darkHover" type="submit">Delete</button>
+                    <button class="darkHover" type="button">Edit</button>
+                    <button class="darkHover" type="button">Delete</button>
                 </div>
             </div>
 
-
-            <div class="book notStarted">
+            <div class="book notstarted">
                 <h2 class="bookName">Harry Potter</h2>
                 <h4 class="authorName">J.K Rollings</h4>
                 <h5 class="pagesRead">0</h5>
                 <h6 class="bookStatus">Not Started</h6>
                 <div class="editButtons">
-                    <button class="darkHover" type="submit">Edit</button>
-                    <button class="darkHover" type="submit">Delete</button>
+                    <button class="darkHover" type="button">Edit</button>
+                    <button class="darkHover" type="button">Delete</button>
                 </div>
             </div>
 
