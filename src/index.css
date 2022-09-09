@@ -19,10 +19,14 @@ body {
 }
 
 .panel {
-    height: 100%; 
+    height: 100%;
 }
 
 #sideForm {
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
     background-color: var(--accentColor1);
     display: flex;
     flex-direction: column;
@@ -30,35 +34,32 @@ body {
     padding: var(--medPadding);
 }
 
-#sideForm > #header > div {
+#sideForm>#header>div {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
 }
 
-#sideForm > #header > div > h2 {
+#sideForm>#header>div>h2 {
     margin-bottom: var(--smPadding);
 }
 
-#sideForm > #header > h6 {
-    margin-top: 0;
-    text-align: center;
-}
-
-
-#sideForm > form {
+#sideForm>form {
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 
-#sideForm > form > div {
+#sideForm>form>div {
     display: flex;
     flex-direction: column;
     margin: var(--smPadding);
+    width: fit-content;
 }
 
-#sideForm > form > button {
-   align-self: center;
+#sideForm>form>button {
+    margin: var(--smPadding);
+    align-self: flex-start;
 }
 
 #mainContent {
@@ -66,56 +67,57 @@ body {
     flex-direction: column;
     width: 100%;
     color: var(--fontLight);
-
 }
 
-#mainContent > * {
+#mainContent>* {
     padding: var(--medPadding);
 }
 
-#mainContent > #header {
+#mainContent>#header {
     background-color: var(--accentColor2);
+    border-bottom: 2px solid #1982FC;
     display: flex;
     flex-direction: row;
     height: fit-content;
-
 }
 
-#mainContent > #header > h2 {
+#mainContent>#header>h2 {
     margin: 0;
     align-self: flex-end;
 }
 
-#mainContent > #books {
-    background-color: var(--accentColor3);
+#mainContent>#books {
+    margin-top: 5%;
     width: fit-content;
     display: grid;
     align-self: center;
     grid-template-rows: repeat(1, 1fr);
+    gap: var(--medPadding);
+}
+
+#mainContent>#books>div {
+    padding: var(--smPadding) var(--medPadding);
+    display: flex;
+    flex-direction: column;
     gap: var(--smPadding);
 }
-#mainContent > #books > .book {
+
+#mainContent>#books>div>h4,
+#mainContent>#books>div>h6 {
+    margin: 0;
+}
+
+#mainContent>#books>div>.book {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    border-radius: var(--roundBorder);
+    width: fit-content;
+
 }
 
-#mainContent > #books > .book > * {
+#mainContent>#books>div>.book>* {
     margin: var(--smPadding);
-}
-
-#mainContent > #books > .book > .authorName,
-#mainContent > #books > .book > .bookName{
-    width: 120px;
-}
-
-#mainContent > #books > .book > .pagesRead{
-    width: 20px;
-}
-
-#mainContent > #books > .book > .bookStatus {
-    width: 85px;
 }
 
 .smIcon {
@@ -128,6 +130,18 @@ body {
     width: auto;
 }
 
-.finished{background-color: #1982FC;}
-.reading{background-color: #723bf9;}
-.notstarted{background-color: rgb(127,23,14);}
+#mainContent>#books>div>h4 {
+    text-align: center;
+}
+
+.finished {
+    background-color: #1982FC;
+}
+
+.reading {
+    background-color: #723bf9;
+}
+
+.notstarted {
+    background-color: rgb(127, 23, 14);
+}

@@ -15,10 +15,8 @@
         <div id="header">
             <div>
                 <img src="../data/Images/bookMark.svg" class="smIcon">
-                <h2>Bookmark</h2>
+                <h2>Bookmark Your Spot</h2>
             </div>
-
-            <h6>Remember your page by saving it here!</h6>
         </div>
 
         <form>
@@ -56,52 +54,21 @@
             <h2>Orlando Public Library</h2>
         </div>
 
-        <div id="books">
-            <div class="book finished">
-                <h2 class="bookName">Harry Potter</h2>
-                <h4 class="authorName">J.K Rollings</h4>
-                <h5 class="pagesRead">256</h5>
-                <h6 class="bookStatus">Finished</h6>
-                <div class="editButtons">
-                    <button class="darkHover" type="button">Edit</button>
-                    <button class="darkHover" type="button">Delete</button>
-                </div>
+        <div id="books" class="frostedGlassBackground">
+            <div id="finishedBooks" class="frostedGlassBackground shadowHover">
+                <h4 id="finishedBooksMainHeader" class="">Read Books (0)</h4>
+                <h6 id="finishedBooksSubHeader">You haven't finished any books yet</h6>
             </div>
 
-            <div class="book finished">
-                <h2 class="bookName">Harry Potter</h2>
-                <h4 class="authorName">J.K Rollings</h4>
-                <h5 class="pagesRead">256</h5>
-                <h6 class="bookStatus">Finished</h6>
-                <div class="editButtons">
-                    <button class="darkHover" type="button">Edit</button>
-                    <button class="darkHover" type="button">Delete</button>
-                </div>
+            <div id="readingBooks" class="frostedGlassBackground shadowHover">
+                <h4 id="readingBooksMainHeader" class="">Current Books (0)</h4>
+                <h6 id="readingBooksSubHeader">You currently aren't reading any books</h6>
             </div>
 
-            <div class="book reading">
-                <h2 class="bookName">Harry Potter</h2>
-                <h4 class="authorName">J.K Rollings</h4>
-                <h5 class="pagesRead">2</h5>
-                <h6 class="bookStatus">Reading</h6>
-                <div class="editButtons">
-                    <button class="darkHover" type="button">Edit</button>
-                    <button class="darkHover" type="button">Delete</button>
-                </div>
+            <div id="notstartedBooks" class="frostedGlassBackground shadowHover">
+                <h4 id="notstartedBooksMainHeader" class="">Back Log (0)</h4>
+                <h6 id="notstartedBooksSubHeader">You have no more books in your backlog</h6>
             </div>
-
-            <div class="book notstarted">
-                <h2 class="bookName">Harry Potter</h2>
-                <h4 class="authorName">J.K Rollings</h4>
-                <h5 class="pagesRead">0</h5>
-                <h6 class="bookStatus">Not Started</h6>
-                <div class="editButtons">
-                    <button class="darkHover" type="button">Edit</button>
-                    <button class="darkHover" type="button">Delete</button>
-                </div>
-            </div>
-
-
         </div>
     </div>
 </body>

@@ -1,9 +1,9 @@
 .frostedGlassBackground {
     backdrop-filter: blur(20px);
-    /*background-color: rgba(201,238,234, 0.8);*/
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(25, 21, 30, 0.8);
+    /*background-color: rgba(255,255,255,0.5);*/
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .darkHover:hover {
@@ -11,3 +11,6 @@
     cursor: pointer;
 }
 
+.shadowHover:hover {
+    filter: drop-shadow(1px 1px 2px gray);
+}
