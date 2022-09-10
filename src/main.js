@@ -1,14 +1,15 @@
 function book() { }
 book.prototype.printBook = function () { console.table(this) }
 
-function library() { }
-library.prototype.books = [];
+function library() { 
+    this.books = [];
+}
+
 library.prototype.printBooks = function () { console.table(this.books) }
 
 const readLibrary = new library();
 const readingLibrary = new library();
 const backlogLibrary = new library();
-
 
 function addBook() {
     const newBook = new book();
@@ -49,26 +50,20 @@ function addBook() {
 }
 
 function appendLibrary(newBook) {
+    let library;
     switch (newBook.readStatus) {
         case "Finished":
-            console.log("Finished")
-            readLibrary.books.push(newBook);
-            readLibrary.printBooks();
-            return readLibrary;
+            library = readLibrary;
+            break;
         case "Reading":
-            console.log("Reading")
-            readingLibrary.books.push(newBook);
-            readingLibrary.printBooks();
-            return readingLibrary;
+            library = readingLibrary;
+            break;
         case "Not Started":
-            console.log("Backlog")
-            backlogLibrary.books.push(newBook);
-            backlogLibrary.printBooks();
-            return backlogLibrary;
-        default:
-            console.log("Something broke")
-            return null;
+            library = backlogLibrary;
+            break;
     }
+    library.books.push(newBook);
+    return library;
 }
 
 function createElements(newBook) {
@@ -129,6 +124,3 @@ function editPage(mainHeaderId, subHeaderId, Library) {
     bookStatus = bookStatus.substring(0, bookStatus.indexOf("(")) + "(" + Library.books.length + ")";
     mainHeaderElement.textContent = bookStatus;
 }
-
-
-

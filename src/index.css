@@ -70,7 +70,7 @@ body {
 }
 
 #mainContent>* {
-    padding: var(--medPadding);
+    padding: var(--smPadding);
 }
 
 #mainContent>#header {
@@ -81,9 +81,18 @@ body {
     height: fit-content;
 }
 
-#mainContent>#header>h2 {
+#mainContent>#header>h2,
+#mainContent > #header > nav > * {
     margin: 0;
     align-self: flex-end;
+}
+
+#mainContent > #header > nav {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-end;
+    gap: var(--smPadding);
 }
 
 #mainContent>#books {
